@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>You Art Design - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #111;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: gold;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: gold;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      position: relative;
+      background: url('Images/3d570ceef7afcde8378c2bac1339171f.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      color: #ccc;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      padding: 14px 35px;
+      background-color: gold;
+      color: #000;
+      font-weight: bold;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #e6b800;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: gold;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 300px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .hero-content,
+    .section h2,
+    .gallery img {
+      animation: fadeInUp 1s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="Images/your-logo.png" alt="You Art Design Logo" />
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Designing Spaces & Brands with Elegance</h1>
+      <p>I’m Yahya Outkoumit, Ceo and founder of You Art Design, creative designer from Morocco specializing in interior and graphic design.</p>
+      <button class="btn-primary" onclick="location.href='work.html'">Explore My Work</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Interior Design Highlights</h2>
+    <div class="gallery">
+      <img src="Images/d82acd20ac7b3c33c5dc78ce56317abc.jpg" alt="Interior Project 1" />
+      <img src="Images/7eefefb5a2ad91513a146a91ef7026bb.jpg" alt="Interior Project 2" />
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 You Art Design — Designed by Yahya Outkoumit | IG: @YouArtDesign
+  </footer>
+
+</body>
+</html>

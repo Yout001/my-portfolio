@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - You Art Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .title-box {
+      border: 2px solid gold;
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 0 auto 40px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: gold;
+      letter-spacing: 1px;
+      border-radius: 10px;
+      text-shadow: 0 0 5px gold;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .service-card {
+      background-color: #111;
+      padding: 30px 20px;
+      border: 1.5px solid gold;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .service-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .title-box {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">My Design Services</div>
+
+  <div class="services-container">
+
+    <div class="service-card">
+      <div class="service-title">Interior Design</div>
+      <div class="service-description">Elegant residential and commercial interiors tailored to client taste, with mood boards and detailed plans.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Exterior Design</div>
+      <div class="service-description">Architectural visualization and façade concepts that combine beauty and functionality for your building exterior.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">3D Modeling & Rendering</div>
+      <div class="service-description">High-quality photorealistic renders for interior and exterior design, including textures, lighting, and furniture placement.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Graphic Design</div>
+      <div class="service-description">Unique and memorable branding visuals: logos, posters, business cards, social media posts, and visual identities.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Branding & Identity</div>
+      <div class="service-description">Complete visual identity creation including logo, color palette, fonts, and brand guidelines tailored to your message.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Space Planning</div>
+      <div class="service-description">Efficient layout solutions to optimize space usability while respecting comfort and design integrity.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Color Consultation</div>
+      <div class="service-description">Expert advice on color theory and harmony to enhance ambiance and mood in any space or brand visual.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-title">Custom Furniture Concepts</div>
+      <div class="service-description">Tailor-made furniture design concepts that match your interior vision and spatial needs.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
